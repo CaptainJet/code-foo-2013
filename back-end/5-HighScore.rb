@@ -85,7 +85,7 @@ end
 __END__
 leaderboard = CodeFoo::LeaderBoard.new # Construct empty leaderboards
 50000.times do |i|
-  leaderboard.push(rand(100), "IGN #{i}") # Add 500000 new random scores between 0 and 99
+  leaderboard.push(rand(100), "IGN #{i}") # Add 50000 new random scores between 0 and 99
 end
 leaderboard.top(10).each do |score|
   puts "#{score.name}: #{score.score}" # Print the top 10 scores
